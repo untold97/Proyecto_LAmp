@@ -9,13 +9,13 @@
     <body>
         <div class="container-fluid">
             <?php
-                echo '<h1>Usuarios del sistema</h1>';
+                echo '<h1>estudiantes del sistema</h1>';
                 $conn = mysqli_connect('db','root','2025');
-                $database = mysqli_select_db($conn, 'jesusdb');
-                $query = 'SELECT * FROM Usuarios';
+                $database = mysqli_select_db($conn, 'universidad');
+                $query = 'SELECT * FROM estudiantes';
                 $result = mysqli_query($conn, $query);
                 echo '<table class="table table-striped">';
-                echo '<thead><tr><th>ID</th><th>Nombre del Usuario</th></tr></thead>';
+                echo '<thead><tr><th>ID</th><th>Nombre estudiantes</th></tr></thead>';
                 while($value = $result->fetch_array(MYSQLI_ASSOC)){
                     echo '<tr>';
                     foreach($value as $element){

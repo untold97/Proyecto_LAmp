@@ -2,7 +2,7 @@ services:
   www:
     build: .
     ports:
-      - "81:80"
+      - "82:80"
     volumes:
       - ./public:/var/www/html/
     depends_on:
@@ -12,7 +12,7 @@ services:
     expose:
       - "3306"
     environment:
-      MYSQL_DATABASE: jesusdb
+      MYSQL_DATABASE: universidad
       MYSQL_USER: jesus
       MYSQL_PASSWORD: 2025
       MYSQL_ROOT_PASSWORD: 2025
@@ -24,7 +24,7 @@ services:
     depends_on:
       - db
     ports:
-      - "8081:80"
+      - "8082:80"
     environment:
       MYSQL_USER: jesus
       MYSQL_PASSWORD: 2025
