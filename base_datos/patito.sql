@@ -6,3 +6,4 @@ INSERT INTO Usuarios(id, nombre) VALUES (435, 'Juan Ramirez');
 INSERT INTO Usuarios(id, nombre) VALUES (552, 'Ana Perez');
 INSERT INTO Usuarios(id, nombre) VALUES (125, 'Miguel Torrez');
 INSERT INTO Usuarios(id, nombre) VALUES (999, 'Sofia Pereira');
+INSERT INTO Usuarios(id, nombre) VALUES (745, 'Paloma Vega');
